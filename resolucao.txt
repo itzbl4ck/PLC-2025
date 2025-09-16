@@ -1,0 +1,4 @@
+Express√o regular : strings bin√rias que n√£o incluem a susbsqu√ncia "011"
+
+res:
+0* (1 0* 1 0*)*
