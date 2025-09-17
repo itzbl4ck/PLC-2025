@@ -4,7 +4,7 @@ Este repositório reúne os trabalhos obrigatórios (TP) feitos fora de aula e o
 
 ## Estrutura
 - **TP1, TP2, ...**: Trabalhos obrigatórios realizados individualmente.
-- **Praticas/**: Exercícios e exemplos resolvidos em aula.
+- **Práticas**: Exercícios e exemplos resolvidos em aula.
 
 Todos os materiais são organizados para facilitar a consulta e avaliação pelo docente.
 
