@@ -9,6 +9,11 @@ Este repositório reúne os trabalhos obrigatórios (TP) feitos fora de aula e o
 Todos os materiais são organizados para facilitar a consulta e avaliação pelo docente.
 
 
+---
+**Nome:** Gonçalo Nuno Machado Monteiro
+**Número de aluno:** A108659
+
+
 ## Trabalhos TP
 - [TPC1](TP1/)
 - [TPC2](TP2/)
