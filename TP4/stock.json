@@ -1,0 +1,10 @@
+{
+    "stock": [
+        { "cod": "A1", "nome": "Cafe", "preco": 0.60, "quant": 15 },
+        { "cod": "A2", "nome": "Cha", "preco": 0.50, "quant": 12 },
+        { "cod": "B1", "nome": "Sumo", "preco": 1.50, "quant": 8 },
+        { "cod": "B2", "nome": "Barra Cereais", "preco": 1.00, "quant": 10 },
+        { "cod": "C1", "nome": "Croissant", "preco": 1.80, "quant": 6 },
+        { "cod": "C2", "nome": "Tosta", "preco": 2.00, "quant": 5 }
+    ]
+}
