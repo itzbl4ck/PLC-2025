@@ -1,0 +1,156 @@
+ProgramaI -> PROGRAM Corpo '.'
+
+Corpo -> CorpoF CorpoV CorpoB
+
+CorpoF -> CorpoF function FUN Argumentos ')' ':' Tipo ';' CorpoV CorpoB ';'
+        | CorpoF function FUN ')' ':' Tipo ';' CorpoV CorpoB ';'
+        | epsilon
+
+Argumentos -> Argumentos ';' VarArg ':' Tipo 
+            | VarArg ':' Tipo 
+
+VarArg -> VarArg ',' VAR
+        | VAR
+
+CorpoV -> ListaVar
+        | epsilon
+
+ListaVar -> ListaVar Var
+          | Var
+
+Var -> var LinesV
+
+LinesV -> LinesV LineV
+        | LineV
+
+LineV -> Ids ':' Tipo ';'
+
+Ids -> Ids ',' VAR
+     | VAR
+
+TipoV -> boolean 
+       | integer
+       | string
+       | real
+
+Tipo -> array '[' ListaA ']' of TipoV
+      | TipoV
+
+ListaA -> ListaA ',' INTEGER doispontos INTEGER
+        | INTEGER doispontos INTEGER
+
+CorpoB -> begin Codigo end 
+        | begin end
+        | begin Codigo ';' end
+
+Codigo -> Codigo ';' CodigoSingular
+        | CodigoSingular
+
+CodigoSingular -> Atribuicao
+                | CorpoB  
+                | Function_call    
+                | While
+                | Repeat
+                | For
+                | If 
+
+Atribuicao -> VAR atri Expressao_logica
+            | VAR '[' IndicesList ']' atri Expressao_logica
+
+Expressao -> Expressao_logica
+
+Expressao_logica -> Expressao_logica or TermoL
+                  | TermoL
+
+TermoL -> TermoL and FatorL
+        | FatorL
+
+FatorL -> CompL
+        | Expressao_aritmetica
+
+CompL -> Expressao_aritmetica '<' Expressao_aritmetica
+       | Expressao_aritmetica '>' Expressao_aritmetica
+       | Expressao_aritmetica menorigual Expressao_aritmetica
+       | Expressao_aritmetica maiorigual Expressao_aritmetica
+       | Expressao_aritmetica '=' Expressao_aritmetica
+
+Expressao_aritmetica -> Expressao_aritmetica '+' TermoA 
+                      | Expressao_aritmetica '-' TermoA 
+                      | TermoA
+
+TermoA -> TermoA shl FatorA
+        | TermoA shr FatorA
+        | TermoA mod FatorA
+        | TermoA div FatorA
+        | TermoA '/' FatorA
+        | TermoA '*' FatorA
+        | FatorA
+
+FatorA -> not ValorA
+        | '+' ValorA
+        | '-' ValorA
+        | ValorA 
+
+ValorA -> ValorA_v
+        | VAR '[' IndicesList ']'
+        | ValorA_i
+        | ValorA_b
+        | ValorA_r 
+        | ValorA_s
+        | '(' Expressao_logica ')'
+        | ValorA_f
+
+ValorA_v -> VAR
+
+ValorA_i -> INTEGER
+
+ValorA_b -> BOOL
+
+ValorA_s -> STRING
+
+ValorA_f -> Function_call
+
+ValorA_r -> REAL
+
+
+IndicesList -> IndicesList ',' Expressao
+             | Expressao
+
+Function_call -> FUN Args ')' 
+               | FUN ')'
+
+Args -> Args ',' Expressao
+      | Expressao
+
+While -> while Expressao_logica do CodigoSingular
+
+Repeat -> CorpoRepeat Expressao_logica
+
+CorpoRepeat -> repeat Codigo until
+             | repeat Codigo ';' until
+
+For -> ForTo
+     | ForDownto
+
+ForTo -> for Atribuicao to Expressao_aritmetica do CodigoSingular
+
+ForDownto -> for Atribuicao downto Expressao_aritmetica do CodigoSingular
+
+If -> if Expressao_logica then CodigoSingular
+    | if Expressao_logica then CodigoSingular else CodigoSingular
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

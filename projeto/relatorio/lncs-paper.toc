@@ -1,0 +1,35 @@
+\babel@toc {portuguese}{}\relax 
+\contentsline {title}{Relatório do projeto de PLC 2025-26}{1}{}%
+\authcount {3}
+\contentsline {author}{Gonçalo Monteiro \and Gonçalo Soares \and José Novais}{1}{}%
+\contentsline {section}{\numberline {1}Introdução}{2}{}%
+\contentsline {section}{\numberline {2}Arquitetura do Compilador}{3}{}%
+\contentsline {subsection}{\numberline {2.1}Análise Léxica}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Gramática}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Análise Sintática}{3}{}%
+\contentsline {section}{\numberline {3}Representação Intermédia}{4}{}%
+\contentsline {subsection}{\numberline {3.1}Estrutura de Representação Intermédia}{4}{}%
+\contentsline {subsection}{\numberline {3.2}Gestão de Dicionários de Símbolos}{4}{}%
+\contentsline {paragraph}{Dicionário Global:}{4}{}%
+\contentsline {paragraph}{Dicionário Local:}{4}{}%
+\contentsline {paragraph}{Caso Especial: Função MAIN.}{4}{}%
+\contentsline {section}{\numberline {4}Análise Semântica}{4}{}%
+\contentsline {subsection}{\numberline {4.1}Verificação de Declarações}{5}{}%
+\contentsline {subsection}{\numberline {4.2}Validação de Tipos em Expressões}{5}{}%
+\contentsline {section}{\numberline {5}Geração de Código}{5}{}%
+\contentsline {subsection}{\numberline {5.1}Alocação de Memória}{5}{}%
+\contentsline {subsection}{\numberline {5.2}Implementação de Estruturas de Controlo}{5}{}%
+\contentsline {paragraph}{Estruturas Condicionais.}{5}{}%
+\contentsline {paragraph}{Ciclos.}{5}{}%
+\contentsline {subsection}{\numberline {5.3}Geração Recursiva de Expressões}{6}{}%
+\contentsline {section}{\numberline {6}Funcionalidades Avançadas}{6}{}%
+\contentsline {subsection}{\numberline {6.1}Arrays Multidimensionais}{6}{}%
+\contentsline {subsection}{\numberline {6.2}Automação Web}{6}{}%
+\contentsline {section}{\numberline {7}Testes}{6}{}%
+\contentsline {subsection}{\numberline {7.1}Teste 1: Hello World}{7}{}%
+\contentsline {subsection}{\numberline {7.2}Teste 2: Fatorial Iterativo}{7}{}%
+\contentsline {subsection}{\numberline {7.3}Teste 3: Número Primo}{8}{}%
+\contentsline {subsection}{\numberline {7.4}Teste 4: Soma de Array}{9}{}%
+\contentsline {subsection}{\numberline {7.5}Teste 5: Conversão Binário para Inteiro}{10}{}%
+\contentsline {subsection}{\numberline {7.6}Teste 6: Fatorial Recursivo}{11}{}%
+\contentsline {section}{\numberline {8}Conclusão}{11}{}%
